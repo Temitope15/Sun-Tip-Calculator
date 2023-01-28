@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+body {
+    width: 100vw;
+    height:100vh ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    .price-input, .tip-input, .button {
+        padding: 10px 40px;
+        outline: none;
+    }
+    .button {
+        background-color: #419549;
+        border: 1px solid transparent;
+        border-radius: 20px;
+        color: white;
+        cursor: pointer;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+    .result-container {
+        display: none;
+
+        h2 {
+           text-align: center;
+        }
+
+        p {
+            margin: 20px;
+        }
+    }
+}
